@@ -17,5 +17,9 @@ Template.menu.events({
         $(".right-menu-bg").css("right", "-300px");
         $(".hide-body").hide();
        // $(".right-menu-bg").css("right", "0");
+    },
+    'click .close-right-menu': function(){
+        $(".right-menu-bg").css("right", "-300px");
+        $(".hide-body").hide();
     }
 }); 

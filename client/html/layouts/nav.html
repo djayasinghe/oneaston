@@ -3,20 +3,15 @@
   <div class="container-fluid">
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="#"></a>
+      <a class="navbar-brand" href="/"></a>
     </div>
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      <ul class="nav navbar-nav">
-          <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">PRIVATE BANKING </a>
+      <ul class="nav navbar-nav hidden-nav">
+          <li >
+          <a href="{{pathFor route='private_banking' name='private_banking'}}" class="{{isActiveRoute 'private_banking'}}" role="button" >PRIVATE BANKING </a>
             
+<!--
           <ul class="dropdown-menu">
             <li><a href="#">Action</a></li>
             <li><a href="#">Another action</a></li>
@@ -26,6 +21,7 @@
             <li role="separator" class="divider"></li>
             <li><a href="#">One more separated link</a></li>
           </ul>
+-->
             {{> svg_icon1}}
         </li>
         
@@ -34,6 +30,7 @@
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">SUPERANNUATION </a>
             
+<!--
           <ul class="dropdown-menu">
             <li><a href="#">Action</a></li>
             <li><a href="#">Another action</a></li>
@@ -43,10 +40,12 @@
             <li role="separator" class="divider"></li>
             <li><a href="#">One more separated link</a></li>
           </ul>
+-->
             {{> svg_icon1}}
         </li>
           <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">PRODUCTS </a>
+<!--
           <ul class="dropdown-menu">
             <li><a href="#">Action</a></li>
             <li><a href="#">Another action</a></li>
@@ -56,10 +55,12 @@
             <li role="separator" class="divider"></li>
             <li><a href="#">One more separated link</a></li>
           </ul>
+-->
               {{> svg_icon1}}
         </li>
           <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">APPLICATION SUPPORT </a>
+<!--
           <ul class="dropdown-menu">
             <li><a href="#">Action</a></li>
             <li><a href="#">Another action</a></li>
@@ -69,29 +70,33 @@
             <li role="separator" class="divider"></li>
             <li><a href="#">One more separated link</a></li>
           </ul>
+-->
               
         </li>
       </ul>
-      
-        
-       
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
 </nav>
-    
+    <!-- /right side menu icon -->
         <div><a href="#" class="right-menu-bt open-right-menu"><i class="ion-navicon-round"></i></a></div>
-    
-      
- <div class="right-menu-bg-wrapper" style="">
-       <div class="right-menu-bg" style="">
-           <div><a href="#" class="close-right-menu"><i class="ion-close-round"></i></a></div>
-        <ul>
-           <li><a href="#">Action</a></li>
-            <li><a href="#">Another action</a></li>
-            <li><a href="#">Something else here</a></li>
-           <li><a href="#">Action</a></li>
-            <li><a href="#">Another action</a></li>
-            <li><a href="#">Something else here</a></li>
+   <!-- /right side menu bg -->    
+ <div class="right-menu-bg-wrapper">
+       <div class="right-menu-bg" >
+           <div><a href="#" class="close-right-menu"><i class="ion-close-round"></i></a>
+           <img src="/images/logo-bgBlack.svg" height="50px">
+           </div>
+        <ul class="right-menu-ul">
+            <li class="hidden-right-nav"><a href="#">Private Banking</a></li>
+            <li class="hidden-right-nav"><a href="#">Superannuation</a></li>
+            <li class="hidden-right-nav"><a href="#">Wealth Management</a></li>
+           <li class="hidden-right-nav"><a href="#">Products</a></li>
+            <li class="hidden-right-nav"><a href="#">Application Support</a></li>
+            
+           <li><a href="#">About</a></li>
+            <li><a href="#">Contact us</a></li>
+            <li><a href="#">Latest News</a></li>
+           <li><a href="#">Case Studies</a></li>
+            <li><a href="#">Partner program</a></li>
            </ul>
         </div>
         </div>

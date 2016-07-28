@@ -24,8 +24,9 @@ iron:router
 twbs:bootstrap
 
 
-anonyfox:mmenu
 mrt:fitvids
 natestrauser:animate-css
-jquery-waypoints
 liadrian:ionicons-cdn
+bigu:waypoints
+danappelxx:hover.css
+zimme:active-route

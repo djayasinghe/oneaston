@@ -1,9 +1,12 @@
 <template name="layout">
     <head>
-  <title>DilanApp</title>
+  <title>OneAston</title>
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 </head>
 
-<body id="wrapper" >
+<body id="wrapper">
     <!-- Preloader -->
 
     <div id="preloader">
@@ -12,27 +15,17 @@
         </div>
     </div>
     <!--Layout -->
-    <div id="page">
+    <div >
     <header>   
     {{> menu}}
     </header>
         <div class="content">
     
   {{> yield}}
+        {{> footer}}
         </div>
     </div>
-    <div class="overlay overlay-boxify">
-			<nav>
-				<ul>
-					<li><a href="#about"><i class="fa fa-heart"></i>About</a></li>
-					<li><a href="#features"><i class="fa fa-flash"></i>Features</a></li>
-				</ul>
-				<ul>
-					<li><a href="#screenshots"><i class="fa fa-desktop"></i>Screenshots</a></li>
-					<li><a href="#download"><i class="fa fa-download"></i>Download</a></li>
-				</ul>
-			</nav>
-		</div>
+    
 </body>
     
 </template>
