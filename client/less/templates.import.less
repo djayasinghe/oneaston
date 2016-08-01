@@ -45,19 +45,22 @@
         float: left;
         color: @white;
         &:hover {
-            background-color: @white;
-            color: @oneastonDefaultBlue;
+            border-bottom: 3px solid @white;
+            background-color:transparent;
+            color: @white;
         }
     }
     .nav .open > a {
         //     .transition(all 0.4s);
         &:hover {
-            background-color: @white;
-            color: @oneastonDefaultBlue;
+            background-color: transparent;
+            border-bottom: 3px solid @white;
+            color: @white;
         }
         &:focus {
-            background-color: @white;
-            color: @oneastonDefaultBlue;
+            background-color: transparent;
+            border-bottom: 3px solid @white;
+            color: @white;
         }
     }
     .navbar-nav > li {}
@@ -67,6 +70,10 @@
         width: 100%;
         top: 70px !important;
     }
+    a.active{
+                //color: @oneastonDefaultBlue !important;
+                border-bottom: 3px solid @white;
+        }
     &.small {
         background: @white;
         height: 66px !important;
@@ -864,9 +871,52 @@ figure.effect-jazz:hover p {
     left: 0;
 }
 }
-
-
-
+/* ---------------------------------------------- /*
+ * Inner Pages product(s) page styles
+/* ---------------------------------------------- */
+.products-page{
+    margin: 4em 0;
+    h2{
+        font-family: oneaston;
+        font-size: 5em;
+        letter-spacing: 0;
+        margin-top: 1em;
+    }
+}
+.products-bg-image-section{
+    h2{
+        color:@white;
+    }
+    p{
+        color:@white;
+    }
+}
+.products-bg1{
+    background-image: url('/images/products-bg1.jpg');
+    background-size: 100%;
+}
+.products-bg2{
+    background-image: url('/images/products-bg2.jpg');
+    background-size: 100%;
+}
+h2.oneaston-font{
+    font-family: oneaston;
+    font-size: 5em;
+    letter-spacing: 0;
+    color:@black;
+}
+.product-page-bottom-img{
+    background-image: url('images/ip-img3.jpg');
+    background-size: 100%;
+    overflow: hidden;
+    h2{
+        font-family: @roboto;
+        font-size: 4em;
+        color: @white;
+        font-weight: 100;
+        text-shadow: 0 1px 3px @black;
+    }
+}
 /* ---------------------------------------------- /*
  * Media queries
 /* ---------------------------------------------- */

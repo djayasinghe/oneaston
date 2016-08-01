@@ -28,7 +28,7 @@
         <li><a href="#">WEALTH MANAGEMENT</a>
           {{> svg_icon1}}</li>
         <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">SUPERANNUATION </a>
+          <a href="#"  role="button" >SUPERANNUATION </a>
             
 <!--
           <ul class="dropdown-menu">
@@ -44,7 +44,7 @@
             {{> svg_icon1}}
         </li>
           <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">PRODUCTS </a>
+          <a href="{{pathFor route='products' name='private_banking'}}" class="{{isActiveRoute 'products'}}"  role="button" >PRODUCTS </a>
 <!--
           <ul class="dropdown-menu">
             <li><a href="#">Action</a></li>

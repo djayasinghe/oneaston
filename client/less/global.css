@@ -56,22 +56,28 @@
   color: #ffffff;
 }
 .navbar .navbar-nav > li > a:hover {
-  background-color: #ffffff;
-  color: #3963ae;
+  border-bottom: 3px solid #ffffff;
+  background-color: transparent;
+  color: #ffffff;
 }
 .navbar .nav .open > a:hover {
-  background-color: #ffffff;
-  color: #3963ae;
+  background-color: transparent;
+  border-bottom: 3px solid #ffffff;
+  color: #ffffff;
 }
 .navbar .nav .open > a:focus {
-  background-color: #ffffff;
-  color: #3963ae;
+  background-color: transparent;
+  border-bottom: 3px solid #ffffff;
+  color: #ffffff;
 }
 .navbar .dropdown-menu {
   position: fixed;
   left: 0;
   width: 100%;
   top: 70px !important;
+}
+.navbar a.active {
+  border-bottom: 3px solid #ffffff;
 }
 .navbar.small {
   background: #ffffff;
@@ -336,6 +342,11 @@ footer .footer-social-icons-bg a:hover {
   width: 100%;
   margin: 0em 0 0em 0;
   padding: 4em 0 3em 0;
+}
+.inner-section h3 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 1.6;
 }
 h2.main-header {
   text-align: center;
@@ -794,6 +805,14 @@ Waypoints
   left: 0;
 }
 /* ---------------------------------------------- /*
+ * Inner Pages product(s) page styles
+/* ---------------------------------------------- */
+.products-page h2 {
+  font-family: oneaston;
+  font-size: 5em;
+  letter-spacing: 0;
+}
+/* ---------------------------------------------- /*
  * Media queries
 /* ---------------------------------------------- */
 /* ---------------------------------------------- /*
@@ -960,6 +979,9 @@ h6 {
 }
 .one-text-color {
   color: #3963ae;
+}
+.mtop20 {
+  margin-top: 20px !important;
 }
 /* ---------------------------------------------- /*
  * Reset border-radius
